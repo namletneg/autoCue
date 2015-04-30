@@ -54,7 +54,6 @@
                     value = $.trim(value),
                     i, len;
 
-                console.log($that)
                 for(i = 0, len = $option.length; i < len; i++){
                     allData[i] = $($option[i]).text();
                 }
@@ -129,7 +128,6 @@
             var value = $(this).val(),
                 current = conf(this),
                 $shell = current.$shell,
-                $box = current.$box,
                 arr = getData(this, value);
 
             flag = -1;    //还原
